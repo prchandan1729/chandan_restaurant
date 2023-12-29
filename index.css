@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+/* styling for reservation page */
+.style-reservation {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    top: 40%;
+    left: 50%; /* Adjust the left position as needed */
+    transform: translateX(-50%); /* Center the element horizontally */
+    width: 40%; /* Adjust the width as needed */
+}
+
+.style-reservation-header{
+    position: absolute;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    top: 20%;
+    left: 33%;
+}
+
+.style-name {
+    position: absolute;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    font-style: arial;
+    top: 50%;
+    left: 42%;
+}
+
+.style-phone {
+    position: absolute;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    font-style: arial;
+    left: 40%;
+    top: 57%;
+}
+
+/*styling for menu page*/
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#right-div{
+    padding-top: 100px;
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    left: 48%;
+    top: 25%;
+    display: table;
+    margin-top: -40px;
+    margin-left: -150px;
+
+  }
+.transition{
+    transition: all .3s ease-out;
+}
+
+.heading{
+    text-align: center;
+    font-size:0.8em;
+    
+  }
+#left-div{
+    padding-top: 100px;
+    display: inline-block;
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    display: table;
+    margin-top: -40px;
+    margin-left: -150px;
+
+  }
+  
+input[type="radio"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  
+label {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    background-color: #454545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    .transition;
+}
+input[type="radio"]:checked + label{
+    background-color: #58ba83;
+}
+
+/*
+arrow for slider
+*/
+.right-arrow {
+    position: absolute;
+    top: 70%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.right-arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.right-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.right-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/*
+Left arrow
+*/
+.left-arrow {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.left-arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.left-arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.left-arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+/* 
+below code for styling menu items overlay on image
+*/
+#menu-img {
+    width: 600px;
+    height: 400px;
+}
+
+.overlay-text {
+    width: 300px;
+    position: absolute;
+    top: 60%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+    background-color: none; 
+    color: #fff; 
+    padding: 10px 30px; 
+    text-align: center;
+}
+
+.style-food-name {
+    font-size: large;
+    font-weight: bold;
+    font-style: arial;
+}
+
+.style-food-details {
+    font-size: small;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .style-reservation {
+        top: 10%;
+        width: 70%;
+    }
+
+    .style-reservation-header {
+        left: 22%;
+    }
+    
+    .style-name {
+        text-align: center;
+        transform: translateX(-25%);
+    }
+
+    .style-phone {
+        text-align: center;
+        transform: translateX(-20%);
+    }
+
+    /*this is for menu page radio buttons*/
+
+    #container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #left-div{
+        position: absolute;
+        background-color: transparent;
+        width: 300px;
+        left: 59%;
+        top: 14%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 50px;
+        padding: 5px;
+        font-size: x-small;
+    }
+    /*this is for left arrow and right arrow*/
+    .left-arrow {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        transform: translate(-50%, -50%);
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+    .right-arrow {
+        position: absolute;
+        top: 20%;
+        left: 95%;
+        transform: translate(-50%, -50%);
+        transform: rotate(270deg);
+        cursor: pointer;
+    }
+
+    /*this is for menu page image and items list*/
+    #right-div{
+        padding-top: 0px;
+        display: inline-block;
+        width: 300px;
+        height: 80px;
+        position: absolute;
+        left: 52%;
+        top: 20%;
+        display: table;
+        margin-top: -40px;
+        margin-left: -150px;
+    }
+      
+    #menu-img {
+        height: 180px;
+        width: 270px;
+    }
+
+    .overlay-text {
+        width: 300px;
+        position: absolute;
+        top: 60%; 
+        left: 40%; 
+        transform: translate(-50%, -50%); 
+        background-color: none; 
+        color: #fff; 
+        padding: 10px 30px; 
+    }
+    
+    .style-food-name {
+        text-align: center;
+        padding-right: 100px;
+        font-size: 7px;
+        font-weight: bold;
+        font-style: arial;
+    }
+    
+    .style-food-details {
+        text-align: center;
+        padding-left: 20px;
+        max-width: 110px;
+        font-size: 5px;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+
+
+/*
+Styling for order page
+*/
+
+.order-section-intro {
+    height: 820px;
+    background-image: url(img/lily-banse--YHSwy6uqvk-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-section-intro h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.order-section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*
+order of products
+*/
+.order-products-div {
+    position: absolute;
+    background-color: white;
+    width: 750px;
+    height: 690px;
+    left: 2%;
+    top: 22%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item-container {
+    width: 250px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.item-order {
+    font-size: 20px;
+    font-weight: bold;
+    height: 90px;
+}
+
+.item-price {
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.add-to-cart-button {
+    background-color: rgb(255, 216, 20);
+    border: rgb(252, 210, 0);
+    padding: 4px;
+    border-radius: 50px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.order-img-container {
+    height: 150px;
+    margin-bottom: 0px;
+}
+/*
+Radio button position and it's div
+*/
+.radio-button-order {
+    position: absolute;
+    background-color: white;
+    width: 750px;
+    left: 2%;
+    top: 12%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    padding: 20px;
+    padding-left: 230px;
+}
+
+/*
+cart summary of orders
+*/
+.cart-products-div {
+    position: absolute;
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    left: 65%;
+    top: 12%;
+}
+
+.style-cart-header {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-cart-content {
+    font-style: ariel;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.style-header-order-grid {
+    display: grid;
+    grid-template-columns: 200px 100px 80px; 
+    grid-gap: 10px; 
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    word-wrap: break-word; /* Wrap the text if it exceeds the width of the grid cell */
+    text-align: center; /* Center the text within the grid cell */
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.style-order-grid {
+    display: grid;
+    grid-template-columns: 200px 100px 80px; 
+    grid-gap: 10px; 
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    word-wrap: break-word; /* Wrap the text if it exceeds the width of the grid cell */
+    text-align: center; /* Center the text within the grid cell */
+    padding-bottom: 5px;
+}
+
+.style-total-order-grid {
+    display: grid;
+    grid-template-columns: 200px 100px 80px; 
+    grid-gap: 10px; 
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    word-wrap: break-word; /* Wrap the text if it exceeds the width of the grid cell */
+    text-align: center; /* Center the text within the grid cell */
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.subtractButton {
+    background-color: red;
+    padding: 3px 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.addButton {
+    background-color: green;
+    padding: 3px 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    width: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-quantity-grid {
+    display: grid;
+    grid-template-columns: 30px 20px 30px; 
+    grid-gap: 5px; 
+    justify-items: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    word-wrap: break-word; /* Wrap the text if it exceeds the width of the grid cell */
+    text-align: center; /* Center the text within the grid cell */
+}
+/*
+Spinner for imagess
+*/
+
